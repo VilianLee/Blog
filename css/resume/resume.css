@@ -1,0 +1,201 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+h3,h4,h5,h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+a{
+    color: #ffffff;
+}
+ul,ol,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#container,.section{
+    height: 100%;
+    position: relative;
+}
+.left{
+    float: left;
+}
+.intro{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+#pages{
+    position:fixed;
+    left: 48%;
+    bottom: 30px;
+    list-style: none;
+}
+#pages li{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 0 10px 5px;
+    float: left;
+}
+#pages li.active{
+    width: 14px;
+    height: 14px;
+    border: 2px solid #FFFE00;
+    background: none;
+    position: relative;
+    top: -3px;
+}
+#section0 .title{
+    color: #ffffff;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-animation: sectitle0 1s ease-in-out 100ms forwards;
+    animation: sectitle0 1s ease-in-out 100ms forwards;
+}
+#section0 .position{
+    color: #ffffff;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-animation: sec0 1s ease-in-out 100ms forwards;
+    animation: sec0 1s ease-in-out 100ms forwards;
+}
+#section0 .personnal-des{
+    animation: emerge 2.5s forwards;
+}
+#section0 .gratuetion{
+    opacity: 0;
+    animation: emerge 2s forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;;
+}
+#section0 .job{
+    opacity: 0;
+    animation: emerge 2s forwards;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;;
+}
+@-webkit-keyframes sectitle0{
+    0%{
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes sectitle0{
+    0%{
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@-webkit-keyframes sec0{
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes sec0{
+    0%{
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes emerge {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#section0{
+    background-color: #1976d2;
+}
+.myphoto{
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(../../images/resume/myphoto.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 250px;
+    background-size: 100%;
+    border: solid 3px #ffffff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    animation: emerge 2s;
+}
+#section1{
+    background-color: #0097a7;
+}
+#section2{
+    background-color: #689f83;
+}
+#section3{
+    background-color: #9575cd;
+}
+.skill-title{
+    border-right: solid 1px #00796b;
+    height: 500px;
+}
+.skill-title h2{
+    margin-top: 200px;
+}
+.skills-list{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.skills-ico{
+    text-align: center;
+}
+.skills-ico img{
+    max-width: 100%;
+    max-height: 80px;
+}
+.skills-des p{
+    margin-bottom: 0;
+    line-height: 20px;
+}
+.skills-des h3{
+    line-height: 26px;
+}
