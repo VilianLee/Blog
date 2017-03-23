@@ -49,7 +49,7 @@
 	SP.moveSectionUp = function(){
 		console.log(opts.loop);
 		if(iIndex == 0){
-			alert("已经是第一页了！")
+			return;
 		}else{
 			if(iIndex){
 				iIndex--;
@@ -64,7 +64,6 @@
 	//滚轮向下滑动事件
 	SP.moveSectionDown = function(){
 		if(iIndex == arrElement.length-1){
-			alert("已经是最后一页了！");
 			return;
 		}else{
 			if(iIndex<(arrElement.length-1)){
@@ -115,18 +114,18 @@
 		if(length){
 
 		}
-		var pageHtml = '<ul id="pages"><li class="active"></li>';
-		for(var i=1;i<length;i++){
-			pageHtml += '<li></li>';
-		}
-		pageHtml += '</ul>';
-		$("body").append(pageHtml);
+		//var pageHtml = '<ul id="pages"><li class="active"></li>';
+		//for(var i=1;i<length;i++){
+		//	pageHtml += '<li></li>';
+		//}
+		//pageHtml += '</ul>';
+		//$("body").append(pageHtml);
 	}
 
 	//分页事件
 	function paginationHandler(){
-		var pages = $("#pages li");
-		pages.eq(iIndex).addClass("active").siblings().removeClass("active");
+		//var pages = $("#pages li");
+		//pages.eq(iIndex).addClass("active").siblings().removeClass("active");
 	}
 
 	//是否支持css的某个属性
